@@ -1,0 +1,15 @@
+.navbar{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    background-color: #ffffff;
+    border-bottom:  #000000B2 1px solid;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0%;
+    color: #214882;
+    cursor: pointer;
+}
