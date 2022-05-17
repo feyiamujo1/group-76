@@ -1,8 +1,17 @@
 import React from 'react'
+import "./team.css"
 
 function Team() {
+
+
+
   return (
-    <div>Team</div>
+    <div>
+      <h2>
+        Team Members
+      </h2>
+      
+    </div>
   )
 }
 

@@ -1,0 +1,9 @@
+.home{
+    display: flex;
+}
+.container{
+    flex: 5;
+}
+.main_display{
+    padding: 10px;
+}

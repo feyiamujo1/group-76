@@ -1,14 +1,16 @@
 import React from 'react'
-import { NotificationsNone, Settings, AccountCircleRounded } from '@mui/icons-material';
+import { NotificationsNone, Settings } from '@mui/icons-material';
 import "./topbar.css"
+import Profile from "../../images/profile.png"
 
 function Topbar() {
   return (
     <div className='topbar'>
        <div className='logo_container'>
-          <p className='logo'>
+          {/* <p className='logo'>
             76gems
-          </p>
+          </p> */}
+          
         </div> 
         <div className='icon_container'>
           <div>
@@ -17,8 +19,8 @@ function Topbar() {
           <div>
             <Settings/>
           </div>
-          <div>
-            <AccountCircleRounded />
+          <div className='profile_image_container'>
+            <img src= {Profile} alt="profile"/>
           </div>
         </div>
 

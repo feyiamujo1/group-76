@@ -21,8 +21,8 @@ function Signup() {
     const submitHandler = (e) => {
         e.preventDefault()
         sessionStorage.setItem('userDetails', JSON.stringify({newAdminDetails}))
-        // console.log(newadminDetails)
-        // window.location="/"
+        console.log(newAdminDetails)
+        window.location="/"
     }
 
   return (

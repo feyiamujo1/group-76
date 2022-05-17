@@ -1,8 +1,12 @@
 .topbar{
+    position: sticky;
+    top: 0;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 50px;
     box-sizing: border-box;
     padding: 15px 25px;
     background-color: #ffffff;
@@ -10,7 +14,17 @@
 .icon_container{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .icon_container div{
+    display: flex;
+    align-items: center;
     margin-right: 10px;
+}
+.profile_image_container{
+    width: 30px;
+    height: 30px;
+}
+.profile_image_container img{
+    height: 100%;
 }
