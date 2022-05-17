@@ -1,4 +1,5 @@
 import React from 'react'
+import "./sidebar.css"
 
 function Sidebar() {
 
@@ -6,16 +7,16 @@ function Sidebar() {
     <div className='sidebar'>
       <div className='links_container'>
         <ul>
-          <li>
+          <li className='link active'>
             Dashboard
           </li>
-          <li>
+          <li className='link'>
             Team Members
           </li>
-          <li>
+          <li className='link'>
             Clients
           </li>
-          <li>
+          <li className='link'>
             Products
           </li>
         </ul>

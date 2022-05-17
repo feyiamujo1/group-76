@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import "./login.css"
 import {Link} from "react-router-dom"
-import Footer from '../../components/footer/Footer'
 import NavBar from '../../components/Navbar/NavBar'
 
 function Login() {
@@ -19,16 +18,15 @@ function Login() {
         window.location="/"
     }
 
-
   return (
     <div className='login_page'>
-        <NavBar/>
+        <NavBar />
         <div className='login_container'>
             <div className='form_container'>
                 <h1>
                     Admin Login
                 </h1>
-                <p>Hey, Kindly enter your details to sign in to your account's dashboard</p>
+                <p>Hey, Kindly enter your details to sign in to your account's dashboard</p> 
 
                 <form onSubmit={submitHandler}>
                     <label for="email">Email</label><br></br>
@@ -44,10 +42,9 @@ function Login() {
                         Sign in
                     </button>
                 </form>
-                <p>Don't have an account? <Link to=""> SignUp Now</Link></p>
+                <p>Don't have an account? <Link to="/signup"> SignUp Now</Link></p>
             </div>
         </div>
-        <Footer/>
     </div>
   )
 }

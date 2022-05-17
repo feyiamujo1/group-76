@@ -1,0 +1,13 @@
+.links_container ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+.links_container .link{
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 10px 25px;
+}
