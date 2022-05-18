@@ -43,7 +43,7 @@ function Products() {
       {
         productItems ? productItems.map((productItem, id )=> (
           
-          <tr key={id} className='product_table_tr'>
+          <tr key={id} className='product_table_tr table_item'>
           <td>{id+1}</td>
             <td className='products_card_image'>
               <img src={productItem.image} alt="product" />
