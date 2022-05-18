@@ -5,7 +5,7 @@ import "./products.css"
 function Products() {
   const [productItems, setProductItems] = useState([])
   const [statusNote, setStatusNote] = useState("")
-  const url = 'https://fakerapi.it/api/v1/products?_quantity=10'
+  const url = 'https://fakerapi.it/api/v1/products?_quantity=15'
 
   useEffect(() => {
     axios.get(url)
@@ -32,25 +32,26 @@ function Products() {
         {statusNote}
       </p>
       <div className='products_container'>
-      <table className='widget_table'>
-              <tr className='widget_table_tr'>
-                <th className='widget_th'>Product</th>
-                <th className='widget_th'>Net Price</th>
-                <th className='widget_th'>Taxes</th>
-                <th className='widget_th'>Price</th>
+      <table className='product_table'>
+              <tr className='product_table_tr'>
+                <th>ID</th>
+                <th className='product_th'>Product</th>
+                <th className='product_th'>Net Price</th>
+                <th className='product_th'>Taxes</th>
+                <th className='product_th'>Price</th>
               </tr>
       {
         productItems ? productItems.map((productItem, id )=> (
           
-          <tr key={id} className='product_card'>
-
+          <tr key={id} className='product_table_tr'>
+          <td>{id+1}</td>
             <td className='products_card_image'>
               <img src={productItem.image} alt="product" />
               <span>{productItem.name}</span>
             </td>
-            <td className='net_price'> {productItem.net_price}</td>
-            <td className='taxes'> { productItem.taxes} </td>
-            <td className='price'> {productItem.price}</td>  
+            <td className='net_price'> &#8358;{productItem.net_price}</td>
+            <td className='taxes'> &#8358;{ productItem.taxes} </td>
+            <td className='price'> &#8358;{productItem.price}</td>  
         </tr>
   
         ) )
