@@ -3,7 +3,6 @@ import axios from "axios"
 import "./team.css"
 
 function Team() {
-
   const [teams, setTeams] = useState([])
   const [statusNote, setStatusNote] = useState("")
   const url = 'http://fakerapi.it/api/v1/products?_quantity=10'
@@ -25,7 +24,6 @@ function Team() {
 
   return (
     <div className='team_display'>
-      <span>
         <h2>Team Members</h2>
         <p>
           {statusNote}
@@ -55,11 +53,9 @@ function Team() {
               : null
           }
         </table>
-      </span>
+      
     </div>
   )
-
-
 }
 
 export default Team
