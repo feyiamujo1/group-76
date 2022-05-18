@@ -10,7 +10,6 @@ function Products() {
   useEffect(() => {
     axios.get(url)
     .then(response => {
-      console.log(response)
       if(response.status === 200){
         setStatusNote("")
         setProductItems(response.data.data)
@@ -20,8 +19,6 @@ function Products() {
     })
 
   }, [])
-  
-  console.log(productItems)
 
   return (
     <div className='products'>

@@ -1,3 +1,7 @@
+.dashboard{
+    width: 100%;
+    box-sizing: border-box;
+}
 .features{
     width: 100%;
     display: flex;
@@ -41,9 +45,11 @@
     color: gray;
 }
 .chart{
+    width: 100%;
     margin: 20px;
     padding: 20px;
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
 }
 .chartTitle{
     margin-bottom: 20px;
@@ -149,4 +155,21 @@
 .widget_status .active{
     color: #fff;
     background-color: #214882;
+}
+@media screen and (max-width:992px){
+    .features{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .featureItem{
+        padding: 15px;
+        margin: 0px 10px;
+        width: 100%;
+    }
+    .dashboard_widget{
+        flex-direction: column;
+    }
+    .recharts-responsive-container{
+        width: 50%;
+    }
 }
