@@ -51,7 +51,7 @@ function Sidebar() {
                 : ""}
               onClick={() => changePathAndClose("team")}>
               <GroupWorkRounded />
-              Team Members
+              Team
             </Link>
           </li>
           <li className='link'>

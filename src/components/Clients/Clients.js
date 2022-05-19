@@ -46,7 +46,7 @@ function Clients() {
                   <td>{client.name}</td>
                   <td>{client.email}</td>
                   <td>{client.phone}</td>
-                  <td>{client.gender}</td>
+                  <td>male</td>
                   <td className='clients_card_image'>
                     <img src={client.image} alt="client"/></td>
                   
