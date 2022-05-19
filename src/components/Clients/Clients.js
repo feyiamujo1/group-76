@@ -23,32 +23,33 @@ function Clients() {
   console.log(client)
 
   return (
-    <div className='client'>
-      <h2>Clients</h2>
+    <div className='clients'>
+      <h3>Clients</h3>
       <p className='error'>
         {statusNote}
       </p>
-      <div className='clents_container'>
+      <div className='clients_container'>
         <table className='clients_table'>
-          <thead>
-            <td>Id</td>
-            <td>Full name</td>
-            <td>Email</td>
-            <td>Phone number</td>
-            <td>Gender</td>
-            <td>Images</td>
-          </thead>
+          <tr className='clients_table'>
+            <th>Id</th>
+            <th className='clients_th'>Full name</th>
+            <th className='clients_th'>Email</th>
+            <th className='clients_th'>Phone number</th>
+            <th className='clients_th'>Gender</th>
+            <th className='clients_th'>Images</th>
+          </tr>
           {
             client ? client.map((client, id) =>
-              <tr className='client_table'>
+              <tr className='client_table_tr'>
                 
                   <td>{client.id}</td>
                   <td>{client.name}</td>
                   <td>{client.email}</td>
                   <td>{client.phone}</td>
                   <td>{client.gender}</td>
-                  <td><img src={client.image} alt="client"/></td>
-                 
+                  <td className='clients_card_image'>
+                    <img src={client.image} alt="client"/></td>
+                  
               </tr>
             )
               : null

@@ -2,7 +2,10 @@ tr,
 td {
     border-color: #9ca4a4;
 }
+.teams_th {
+    text-align: left;
 
+}
 .team .error {
     text-align: center;
     color: red;
@@ -19,4 +22,18 @@ td {
 .team_table {
     width: 100%;
     border-spacing: 15px;
+}
+
+.teams_card_image {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.teams_card_image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
 }
