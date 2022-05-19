@@ -3,7 +3,7 @@
     top: 0;
     flex: 1;
     height: 100vh;
-    background: #000000;
+    background-image: linear-gradient(180deg, #000000 10%, #335f2d 85%, #335f2d 90%);
     color: #9a9a9a;
     font-weight: 600;
     display: flex;

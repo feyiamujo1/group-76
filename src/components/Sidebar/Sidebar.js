@@ -26,6 +26,7 @@ function Sidebar() {
   }
 
   return (
+    
     <div className='sidebar'>
       <div className='links_container'>
         <div className='logo_container'>
@@ -50,7 +51,7 @@ function Sidebar() {
                 : ""}
               onClick={() => changePathAndClose("team")}>
               <GroupWorkRounded />
-              Team Members
+              Team
             </Link>
           </li>
           <li className='link'>

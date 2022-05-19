@@ -30,14 +30,14 @@ function Team() {
         </p>
         <div className='team_container'>
          <table className='team_table'>
-            <thead>
-              <td>Id</td>
-              <td>Full name</td>
-              <td>Email</td>
-              <td>Phone number</td>
-              <td>Gender</td>
-              <td>Images</td>
-            </thead>
+            <tr className='teams_table'>
+              <th>Id</th>
+              <th className='teams_th'>Full name</th>
+              <th className='teams_th'>Email</th>
+              <th className='teams_th'>Phone number</th>
+              <th className='teams_th'>Gender</th>
+              <th>Images</th>
+            </tr>
             {
               teams ? teams.map((teams, id) =>
                 
@@ -48,7 +48,8 @@ function Team() {
                     <td>{teams.email}</td>
                     <td>{teams.phone}</td>
                     <td>{teams.gender}</td>
-                    <td><img src={teams.image} alt="team"/></td>
+                    <td className='teams_card_image'>
+                      <img src={teams.image} alt="team"/></td>
                   </tr>
                 
               )
