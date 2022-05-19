@@ -1,14 +1,14 @@
 import React from 'react'
-import { NotificationsNone, Settings} from '@mui/icons-material';
+import { NotificationsNone, Settings, Menu} from '@mui/icons-material';
 import "./topbar.css"
 import Profile from "../../images/profile.png"
 
 function Topbar() {
   
   // const [showNav, setShowNav] = useState(true);
-  // const openNav = () => {
-  //   document.getElementById("sidebar").style.display = "flex";
-  // }
+  const openNav = () => {
+    document.getElementById("sidebar").style.display = "flex";
+  }
   // const closeNav = () => {
   //   document.getElementById("sidebar").style.display = "none";
   // } 
@@ -30,7 +30,8 @@ function Topbar() {
 
   return (
     <div className='topbar'>
-        <div className='logo_container' > {/* onClick={toggleNav} */}
+        <div className='menu_container' > {/* onClick={toggleNav} */}
+          <Menu id="menubtn" onClick={openNav}/>
         </div> 
         <div className='icon_container'>
           <div>

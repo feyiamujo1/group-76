@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, Link } from "react-router-dom"
 import "./sidebar.css"
 import Logo from "../../images/logo2.png"
-import { GridViewRounded, GroupWorkRounded, PeopleRounded, Inventory2Rounded, ExitToAppRounded } from "@mui/icons-material"
+import { GridViewRounded, GroupWorkRounded, PeopleRounded, Inventory2Rounded, ExitToAppRounded, Close } from "@mui/icons-material"
 
 function Sidebar() {
   const location = useLocation().pathname;
@@ -26,10 +26,10 @@ function Sidebar() {
   }
 
   return (
-    
-    <div className='sidebar'>
+    <div id='sidebar' className='sidebar'>
       <div className='links_container'>
         <div className='logo_container'>
+          <Close id="closebtn" onClick={closeNav}/>
           <img src={Logo} alt="logo" />
         </div>
         <ul>

@@ -98,7 +98,7 @@ function Dashboard() {
           <h3 className='chartTitle'>
           Sales Analytics
           </h3>
-          <ResponsiveContainer width="100%" aspect={4/1}>
+          <ResponsiveContainer className="chart_container" aspect={4/1}>
             <LineChart data ={data}>
               <XAxis dataKey="name" stroke ="#214882"/>
               <Line type ="monotone" dataKey = "Active User" stroke="#404a46"/>
@@ -115,7 +115,7 @@ function Dashboard() {
             <div className='event_container'>
               <div className='event'>
                 <span className='event_date'><Event className='eventIcon'/> 20 May, fri</span>
-                <span className='event_title'>103th Web Conference</span>
+                <span className='event_title'>103th Conference</span>
               </div>
               <div className='event'>
                 <span className='event_date'><Event className='eventIcon'/> 24 May, Tue</span>
@@ -123,7 +123,7 @@ function Dashboard() {
               </div>
               <div className='event'>
                 <span className='event_date'><Event className='eventIcon'/> 29 May, Mon</span>
-                <span className='event_title'>Meeting with Partners</span>
+                <span className='event_title'>Meet with Partners</span>
               </div>
               <div className='event'>
                 <span className='event_date'><Event className='eventIcon'/> 12 Jun, Thu</span>
