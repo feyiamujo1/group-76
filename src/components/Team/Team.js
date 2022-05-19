@@ -23,39 +23,40 @@ function Team() {
   console.log(teams)
 
   return (
-    <div className='team_display'>
+    <div className='teams'>
         <h2>Team Members</h2>
-        <p>
+        <p className='error'>
           {statusNote}
         </p>
-        <table>
-          <thead>
-            <td>Id</td>
-            <td>Full name</td>
-            <td>Email</td>
-            <td>Phone number</td>
-            <td>Gender</td>
-            <td>Images</td>
-          </thead>
-          {
-            teams ? teams.map((teams, id) =>
-              <div>
-                <tr>
-                  <td>{teams.id}</td>
-                  <td>{teams.fristname + " " + teams.lastname}</td>
-                  <td>{teams.gmail}</td>
-                  <td>{teams.phone}</td>
-                  <td>{teams.gender}</td>
-                  <td>{teams.image}</td>
-                </tr>
-              </div>
-            )
-              : null
-          }
-        </table>
-      
+        <div className='team_container'>
+         <table className='team_table'>
+            <thead>
+              <td>Id</td>
+              <td>Full name</td>
+              <td>Email</td>
+              <td>Phone number</td>
+              <td>Gender</td>
+              <td>Images</td>
+            </thead>
+            {
+              teams ? teams.map((teams, id) =>
+                
+                  <tr className='team_table'>
+                    
+                    <td>{teams.id}</td>
+                    <td>{teams.fristname + " " + teams.lastname}</td>
+                    <td>{teams.gmail}</td>
+                    <td>{teams.phone}</td>
+                    <td>{teams.gender}</td>
+                    <td>{teams.image}</td>
+                  </tr>
+                
+              )
+                : null
+            }
+          </table>
+        </div>
     </div>
   )
 }
-
-export default Team
+export default Team 
