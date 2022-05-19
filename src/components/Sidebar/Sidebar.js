@@ -26,6 +26,7 @@ function Sidebar() {
   }
 
   return (
+    
     <div className='sidebar'>
       <div className='links_container'>
         <div className='logo_container'>
