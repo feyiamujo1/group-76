@@ -39,6 +39,7 @@
 }
 .line_container .logo_container #close{
     color: #ffffff;
+    cursor: pointer;
 }
 .line_container .logo_container #close:hover{
     color: #9a9a9a;
