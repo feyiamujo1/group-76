@@ -13,9 +13,6 @@
     width: 100%;
     border-spacing: 15px;
 }
-.table_item{
-    cursor: pointer;
-}
 tr, td{
     border-color:#9ca4a4;
 }
@@ -39,6 +36,5 @@ tr, td{
     font-weight: 400;
 }
 .price{
-    color: #214882;
-    font-weight: 600;
+    color: #1c9941;
 }
