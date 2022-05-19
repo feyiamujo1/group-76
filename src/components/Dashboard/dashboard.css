@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-=======
 .dashboard{
     width: 100%;
     box-sizing: border-box;
 }
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
 .features{
     width: 100%;
     display: flex;
@@ -48,17 +45,10 @@
     color: gray;
 }
 .chart{
-<<<<<<< HEAD
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-=======
-    width: 100%;
     margin: 20px;
     padding: 20px;
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     box-sizing: border-box;
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
 }
 .chartTitle{
     margin-bottom: 20px;
@@ -81,14 +71,10 @@
     align-items: center;
     padding: 15px 0px;
     border-top: 1px solid #9ca4a4;
-<<<<<<< HEAD
-    
-=======
     cursor: pointer;
 }
 .event:hover{
     box-shadow: inset 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
 }
 .event.last{
     border-bottom: 1px solid #9ca4a4;
@@ -101,11 +87,7 @@
     color: #495050;
 }
 .eventIcon{
-<<<<<<< HEAD
-    color: #1c9941;
-=======
     color: #214882;
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
     margin-right: 10px;
 }
 .event_title{
@@ -119,11 +101,7 @@
     text-align: center;
     font-size: 14px;
     color: #fff;
-<<<<<<< HEAD
-    background-color: #1c9941;
-=======
     background-color: #214882;
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
 }
 .large_widget{
     flex: 2;
@@ -137,8 +115,6 @@
 .widget_th{
     text-align: left;
 }
-<<<<<<< HEAD
-=======
 .widget_table .content:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -149,7 +125,6 @@
     -webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
     -o-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
 }
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
 .widget_table_user{
     display: flex;
     align-items: center;
@@ -178,9 +153,6 @@
 }
 .widget_status .active{
     color: #fff;
-<<<<<<< HEAD
-    background-color: #1c9941;
-=======
     background-color: #214882;
 }
 @media screen and (max-width:992px){
@@ -199,5 +171,4 @@
     .recharts-responsive-container{
         width: 50%;
     }
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
 }

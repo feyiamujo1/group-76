@@ -4,9 +4,7 @@ import {ArrowDownward, ArrowUpward} from "@mui/icons-material"
 import {LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import {Event} from '@mui/icons-material';
 
-function Dashboard() {
-
-  
+function Dashboard() {  
 
   const data = [
     {
@@ -100,13 +98,9 @@ function Dashboard() {
           <h3 className='chartTitle'>
           Sales Analytics
           </h3>
-          <ResponsiveContainer width="100%" aspect={4/1}>
+          <ResponsiveContainer >
             <LineChart data ={data}>
-<<<<<<< HEAD
-              <XAxis dataKey="name" stroke ="#1c9941"/>
-=======
               <XAxis dataKey="name" stroke ="#214882"/>
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
               <Line type ="monotone" dataKey = "Active User" stroke="#404a46"/>
               <Tooltip/>
               <CartesianGrid stroke='#e0dfdf' strokeDasharray="5 5"/>
@@ -157,11 +151,7 @@ function Dashboard() {
                 <th className='widget_th'>Amount</th>
                 <th className='widget_th'>Status</th>
               </tr>
-<<<<<<< HEAD
-              <tr className='widget_table_tr'>
-=======
               <tr className='widget_table_tr content'>
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
                 <td className='widget_table_user'>
                   <img className='widget_img' src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80' alt='user'/>
                   <span className="widget_username">
@@ -178,11 +168,7 @@ function Dashboard() {
                   <div className='inactive'>Inactive</div>
                 </td>
               </tr>
-<<<<<<< HEAD
-              <tr className='widget_table_tr'>
-=======
               <tr className='widget_table_tr content'>
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
                 <td className='widget_table_user'>
                   <img className='widget_img' src='https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60' alt='user'/>
                   <span className="widget_username">
@@ -199,11 +185,7 @@ function Dashboard() {
                   <div className='inactive'>Inactive</div>
                 </td>
               </tr>
-<<<<<<< HEAD
-              <tr className='widget_table_tr'>
-=======
               <tr className='widget_table_tr content'>
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
                 <td className='widget_table_user'>
                   <img className='widget_img' src='https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' alt='user'/>
                   <span className="widget_username">
@@ -220,11 +202,7 @@ function Dashboard() {
                   <div className='active'>Active</div>
                 </td>
               </tr>
-<<<<<<< HEAD
-              <tr className='widget_table_tr'>
-=======
               <tr className='widget_table_tr content'>
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
                 <td className='widget_table_user'>
                   <img className='widget_img' src='https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60' alt='user'/>
                   <span className="widget_username">
@@ -241,11 +219,7 @@ function Dashboard() {
                   <div className='active'>Active</div>
                 </td>
               </tr>
-<<<<<<< HEAD
-              <tr className='widget_table_tr'>
-=======
               <tr className='widget_table_tr content'>
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
                 <td className='widget_table_user'>
                   <img className='widget_img' src='https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHVzZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60' alt='user'/>
                   <span className="widget_username">

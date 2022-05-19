@@ -5,7 +5,7 @@ import axios from 'axios'
 function Clients() {
   const [client, setClient] = useState([])
   const [statusNote, setStatusNote] = useState("")
-  const url = 'http://fakerapi.it/api/v1/products?_quantity=1'
+  const url = 'https://fakerapi.it/api/v1/companies?_quantity=1'
 
   useEffect(() => {
     axios.get(url)
@@ -43,11 +43,11 @@ function Clients() {
               <tr className='client_table'>
                 
                   <td>{client.id}</td>
-                  <td>{client.fristname + " " + client.lastname}</td>
-                  <td>{client.gmail}</td>
+                  <td>{client.name}</td>
+                  <td>{client.email}</td>
                   <td>{client.phone}</td>
                   <td>{client.gender}</td>
-                  <td>{client.image}</td>
+                  <td><img src={client.image} alt="client"/></td>
                  
               </tr>
             )

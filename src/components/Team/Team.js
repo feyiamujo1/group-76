@@ -5,9 +5,8 @@ import "./team.css"
 function Team() {
   const [teams, setTeams] = useState([])
   const [statusNote, setStatusNote] = useState("")
-  const url = 'http://fakerapi.it/api/v1/products?_quantity=10'
+  const url = 'https://fakerapi.it/api/v1/persons?_quantity=10'
 
-<<<<<<< HEAD
   useEffect(() => {
     axios.get(url)
       .then(response => {
@@ -45,11 +44,11 @@ function Team() {
                   <tr className='team_table'>
                     
                     <td>{teams.id}</td>
-                    <td>{teams.fristname + " " + teams.lastname}</td>
-                    <td>{teams.gmail}</td>
+                    <td>{teams.firstname + " " + teams.lastname}</td>
+                    <td>{teams.email}</td>
                     <td>{teams.phone}</td>
                     <td>{teams.gender}</td>
-                    <td>{teams.image}</td>
+                    <td><img src={teams.image} alt="team"/></td>
                   </tr>
                 
               )
@@ -57,13 +56,6 @@ function Team() {
             }
           </table>
         </div>
-=======
-  return (
-    <div>
-      <h2>
-        Team Members
-      </h2>
->>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
     </div>
   )
 }

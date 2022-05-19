@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import { useLocation, Link } from "react-router-dom"
 import "./sidebar.css"
 import Logo from "../../images/logo2.png"
-import { GridViewRounded, GroupWorkRounded, PeopleRounded, Inventory2Rounded, ExitToAppRounded, Link } from "@mui/icons-material"
+import { GridViewRounded, GroupWorkRounded, PeopleRounded, Inventory2Rounded, ExitToAppRounded } from "@mui/icons-material"
 
 function Sidebar() {
   const location = useLocation().pathname;
