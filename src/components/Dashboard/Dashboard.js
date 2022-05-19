@@ -98,7 +98,7 @@ function Dashboard() {
           <h3 className='chartTitle'>
           Sales Analytics
           </h3>
-          <ResponsiveContainer >
+          <ResponsiveContainer width="100%" aspect={4/1}>
             <LineChart data ={data}>
               <XAxis dataKey="name" stroke ="#214882"/>
               <Line type ="monotone" dataKey = "Active User" stroke="#404a46"/>
