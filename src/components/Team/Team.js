@@ -7,6 +7,7 @@ function Team() {
   const [statusNote, setStatusNote] = useState("")
   const url = 'http://fakerapi.it/api/v1/products?_quantity=10'
 
+<<<<<<< HEAD
   useEffect(() => {
     axios.get(url)
       .then(response => {
@@ -56,6 +57,13 @@ function Team() {
             }
           </table>
         </div>
+=======
+  return (
+    <div>
+      <h2>
+        Team Members
+      </h2>
+>>>>>>> 8fe9680a423bde1144a0e5a737555774edbfd4ec
     </div>
   )
 }
