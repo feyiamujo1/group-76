@@ -55,10 +55,11 @@
     background: none;
     font-size: 14px;
     color: #000000;
+    outline: none !important;
 
 }
 .signup_form_container input:focus{
-    outline: #90a8f0 2px solid;
+    border: #90a8f0 2px solid;
 }
 .signup_form_container .signBtn{
     box-sizing: border-box;

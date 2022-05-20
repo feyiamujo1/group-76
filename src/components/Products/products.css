@@ -1,3 +1,6 @@
+.products{
+    margin: 15px;
+}
 .products .error{
     text-align: center;
     color: red;
@@ -6,19 +9,15 @@
 .products_container{
     width: 100%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 5px;
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
 .product_table{
     width: 100%;
     border-spacing: 15px;
 }
-tr, td{
-    border-color:#9ca4a4;
-}
 .product_th{
     text-align: left;
-    
 }
 .products_card_image{
     display: flex;
@@ -36,5 +35,44 @@ tr, td{
     font-weight: 400;
 }
 .price{
-    color: #1c9941;
+    color: #214882;
+}
+@media screen and (max-width:992px){
+    .products_card_image img{
+        width: 45px;
+        height: 45px;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .products{
+        margin: 10px;
+    }
+    .products_card_image img{
+        width: 40px;
+        height: 40px;
+    }
+    .products_container{
+        padding: 0px;
+    }
+    .product_table{
+        font-size: 14px;
+    }
+    .net_price, .taxes, .price{
+        font-size: 12px;
+    }
+    .product_th{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:528px){
+    .net_price_heading, .taxes_heading, .net_price, .taxes{
+        display: none;
+    }
+    .product_th{
+        font-size: 14px;
+    }
+    .price{
+        font-size: 14px;
+    }
 }

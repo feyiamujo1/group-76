@@ -23,19 +23,19 @@ function Products() {
   return (
     <div className='products'>
       <h3>
-        Products
+        List of Products
       </h3>
       <p className='error'>
         {statusNote}
       </p>
       <div className='products_container'>
       <table className='product_table'>
-              <tr className='product_table_tr'>
-                <th>ID</th>
-                <th className='product_th'>Product</th>
-                <th className='product_th'>Net Price</th>
-                <th className='product_th'>Taxes</th>
-                <th className='product_th'>Price</th>
+              <tr className='product_table_tr table_heading'>
+                <th className='product_th'>No</th>
+                <th className='product_th'>Product </th>
+                <th className='product_th net_price_heading'>Net Price (&#8358;)</th>
+                <th className='product_th taxes_heading'>Taxes (%)</th>
+                <th className='product_th'>Price (&#8358;)</th>
               </tr>
       {
         productItems ? productItems.map((productItem, id )=> (
@@ -45,11 +45,10 @@ function Products() {
               <img src={productItem.image} alt="product" />
               <span>{productItem.name}</span>
             </td>
-            <td className='net_price'> &#8358;{productItem.net_price}</td>
-            <td className='taxes'> &#8358;{ productItem.taxes} </td>
-            <td className='price'> &#8358;{productItem.price}</td>  
+            <td className='net_price'>{productItem.net_price}</td>
+            <td className='taxes'>{ productItem.taxes} </td>
+            <td className='price'>{productItem.price}</td>  
         </tr>
-  
         ) )
         : null
       }

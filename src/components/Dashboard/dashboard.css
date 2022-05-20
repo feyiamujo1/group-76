@@ -226,5 +226,8 @@
         width: 50px;
         font-size: 12px;
     }
+    .widget_table td{
+        padding: 10px 0px;
+    }
 }
 

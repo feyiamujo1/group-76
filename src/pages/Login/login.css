@@ -46,7 +46,7 @@ form{
     color: #000000;
 }
 .form_container input{
-    outline: #90a8f0 2px solid;
+    outline: none !important;
 }
 
 .form_container input[type=checkbox]{
