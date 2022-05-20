@@ -16,11 +16,18 @@
     box-sizing: border-box;
     cursor: pointer;
 }
+#menubtn{
+    height: 27px;
+    width: 27px;
+    display: none;
+}
+#menubtn:hover{
+    color: #9a9a9a;
+}
 .icon_container{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .icon_container div{
     display: flex;
@@ -39,5 +46,8 @@
         z-index: 1;
         width: 100%;
         box-sizing: border-box;
+    }
+    #menubtn{
+        display: block;
     }
 }

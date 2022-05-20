@@ -8,7 +8,7 @@
 }
 .featureItem{
     flex: 1;
-    margin: 0px 20px;
+    margin: 0px 15px;
     margin-bottom: 15px;
     cursor: pointer;
     padding: 25px;
@@ -90,12 +90,14 @@
     margin-right: 20px;
     text-transform: uppercase;
     color: #495050;
+    width: 45%;
 }
 .eventIcon{
     color: #214882;
     margin-right: 10px;
 }
 .event_title{
+    width: 35%;
     font-size: 14px;
     font-weight: 700;
 }
@@ -174,20 +176,55 @@
         width: 50%;
     }
     .dashboard_widget{
+        display: flex;
         flex-direction: column;
     }
     .small_widget{
         padding: 20px;
         margin-right: 0px;
-
+        
     }
     .small_widget .event_date{
+        width: 50%;
         font-size: 14px;
     }
     .small_widget .event_title{
+        width: 40%;
         font-size: 16px;
     }
-}
-@media screen and (max-width:768px){
+    .widget_table{
+        border-spacing: 5px;
+    }
     
 }
+@media screen and (max-width:768px){
+    .small_widget{
+        flex: 1;
+        margin-right: 0px;
+        padding-bottom: 10px;
+    }
+    .large_widget{
+        flex: 1;
+    }
+    .widget_date, .widget_amount{
+        font-size: 12px;
+    }
+    .widget_table{
+        border-spacing: 0px;
+    }
+    .widget_th{
+        font-size: 14px;
+    }
+    .widget_img{
+        height: 30px;
+        width: 30px;
+    }
+    .widget_username{
+        font-size: 12px;
+    }
+    .widget_status div{
+        width: 50px;
+        font-size: 12px;
+    }
+}
+

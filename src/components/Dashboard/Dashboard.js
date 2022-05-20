@@ -98,8 +98,8 @@ function Dashboard() {
           <h3 className='chartTitle'>
           Sales Analytics
           </h3>
-          <ResponsiveContainer className="chart_container" aspect={4/1}>
-            <LineChart data ={data}>
+          <ResponsiveContainer className="chart_container"  aspect={3}>
+            <LineChart className='innerchart_container' data ={data}>
               <XAxis dataKey="name" stroke ="#214882"/>
               <Line type ="monotone" dataKey = "Active User" stroke="#404a46"/>
               <Tooltip/>
@@ -119,11 +119,11 @@ function Dashboard() {
               </div>
               <div className='event'>
                 <span className='event_date'><Event className='eventIcon'/> 24 May, Tue</span>
-                <span className='event_title'>Lanuch with Steve</span>
+                <span className='event_title'>Rasks Launch</span>
               </div>
               <div className='event'>
                 <span className='event_date'><Event className='eventIcon'/> 29 May, Mon</span>
-                <span className='event_title'>Meet with Partners</span>
+                <span className='event_title'>Partners Dinner</span>
               </div>
               <div className='event'>
                 <span className='event_date'><Event className='eventIcon'/> 12 Jun, Thu</span>
@@ -147,8 +147,8 @@ function Dashboard() {
             <table className='widget_table'>
               <tr className='widget_table_tr'>
                 <th className='widget_th'>Customer</th>
-                <th className='widget_th'>Date</th>
-                <th className='widget_th'>Amount</th>
+                <th className='widget_th widget_head_date'>Date</th>
+                <th className='widget_th widget_head_amount'>Amount</th>
                 <th className='widget_th'>Status</th>
               </tr>
               <tr className='widget_table_tr content'>
@@ -159,7 +159,7 @@ function Dashboard() {
                   </span>
                 </td>
                 <td className='widget_date'>
-                  May 2, 2022
+                  May 20, 2022
                 </td>
                 <td className='widget_amount'>
                   &#8358;30000

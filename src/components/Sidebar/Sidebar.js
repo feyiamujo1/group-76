@@ -28,8 +28,10 @@ function Sidebar() {
   return (
     <div id='sidebar' className='sidebar'>
       <div className='links_container'>
-        <div className='logo_container'>
+        <div >
           <Close id="closebtn" onClick={closeNav}/>
+        </div>
+        <div className='logo_container'>
           <img src={Logo} alt="logo" />
         </div>
         <ul>
