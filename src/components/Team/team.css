@@ -40,3 +40,8 @@ td {
     object-fit: cover;
     margin-right: 10px;
 }
+@media screen and (max-width:768px){
+    .teams{
+        margin: 10px;
+    }
+}

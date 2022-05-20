@@ -1,3 +1,6 @@
+.clients{
+    margin: 15px;
+}
 tr,
 td {
     border-color: #9ca4a4;
@@ -38,4 +41,9 @@ td {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+}
+@media screen and (max-width:768px){
+    .clients{
+        margin: 10px;
+    }
 }
