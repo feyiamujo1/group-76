@@ -36,8 +36,8 @@ td {
 }
 
 .clients_card_image img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
