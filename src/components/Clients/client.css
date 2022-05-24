@@ -36,8 +36,8 @@ td {
 }
 
 .clients_card_image img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
@@ -45,5 +45,29 @@ td {
 @media screen and (max-width:768px){
     .clients{
         margin: 10px;
+    }
+    .clients_card_image img{
+        width: 40px;
+        height: 40px;
+    }
+    .clients_container{
+        padding: 0px;
+    }
+    .clients_table{
+        font-size: 14px;
+    }
+    .email_body, .phone_body, .gender_body{
+        font-size: 12px;
+    }
+    .clients_th{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:528px){
+    .phone_body, .phone_heading, .gender_heading, .gender_body{
+        display: none;
+    }
+    .clients_th{
+        font-size: 14px;
     }
 }

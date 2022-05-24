@@ -30,9 +30,12 @@
     align-items: center;
 }
 .icon_container div{
-    display: flex;
+    display: flex; 
     align-items: center;
     margin-right: 10px;
+}
+.icon_container div .icon{  
+    cursor: pointer;
 }
 .profile_image_container{
     width: 30px;

@@ -14,14 +14,12 @@ td {
     color: red;
     font-weight: 600;
 }
-
 .team_container {
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
-
 .team_table {
     width: 100%;
     border-spacing: 15px;
@@ -44,4 +42,26 @@ td {
     .teams{
         margin: 10px;
     }
+    .teams_card_image img{
+        width: 40px;
+        height: 40px;
+    }
+    .team_container{
+        padding: 0px;
+    }
+    .team_table{
+        font-size: 14px;
+    }
+    .teams_email, .teams_phone, .teams_gender{
+        font-size: 12px;
+    }
+    .teams_th{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:528px){
+    .teams_email, .teams_email_head, .teams_gender_heading, .teams_gender{
+        display: none;
+    }
+    
 }

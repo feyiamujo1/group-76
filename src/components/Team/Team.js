@@ -10,7 +10,6 @@ function Team() {
   useEffect(() => {
     axios.get(url)
       .then(response => {
-        console.log(response)
         if (response.status === 200) {
           setStatusNote("")
           setTeams(response.data.data)
@@ -18,9 +17,7 @@ function Team() {
           setStatusNote("Error while loading data, please Kindly refresh the page!")
         }
       })
-
   }, [])
-  console.log(teams)
 
   return (
     <div className='teams'>
@@ -30,28 +27,22 @@ function Team() {
         </p>
         <div className='team_container'>
          <table className='team_table'>
-            <tr className='teams_table'>
-              <th>Id</th>
+            <tr className='team_table_tr table_heading'>
+              <th className='teams_th'>Id</th>
               <th className='teams_th'>Full name</th>
-              <th className='teams_th'>Email</th>
-              <th className='teams_th'>Phone number</th>
-              <th className='teams_th'>Gender</th>
-              <th>Images</th>
+              <th className='teams_th teams_email_head'>Email</th>
+              <th className='teams_th teams_phone_head'>Phone number</th>
+              <th className='teams_th teams_gender_heading'>Gender</th>
             </tr>
             {
-              teams ? teams.map((teams, id) =>
-                
+              teams ? teams.map((teams) =>
                   <tr className='team_table'>
-                    
                     <td>{teams.id}</td>
-                    <td>{teams.firstname + " " + teams.lastname}</td>
-                    <td>{teams.email}</td>
-                    <td>{teams.phone}</td>
-                    <td>{teams.gender}</td>
-                    <td className='teams_card_image'>
-                      <img src={teams.image} alt="team"/></td>
+                    <td className='teams_card_image'><img src={teams.image} alt="team"/><span>{teams.firstname + " " + teams.lastname}</span></td>
+                    <td className='teams_email'>{teams.email}</td>
+                    <td className='teams_phone'>{teams.phone}</td>
+                    <td className='teams_gender'>{teams.gender}</td>                      
                   </tr>
-                
               )
                 : null
             }

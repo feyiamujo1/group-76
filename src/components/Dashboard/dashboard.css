@@ -125,9 +125,9 @@
     text-align: left;
 }
 .widget_table .content:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
     transition: 0.5s ease;
     box-shadow:  0 0 5px  rgba(0,0,0,0.6);
     -moz-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
@@ -194,6 +194,16 @@
     }
     .widget_table{
         border-spacing: 5px;
+    }
+    .widget_table .content:hover{
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        transition: 0.5s ease;
+        box-shadow:  0 0 5px  rgba(0,0,0,0.6);
+        -moz-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
+        -o-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
     }
     
 }

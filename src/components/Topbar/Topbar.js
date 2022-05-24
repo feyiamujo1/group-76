@@ -35,14 +35,13 @@ function Topbar() {
         </div> 
         <div className='icon_container'>
           <div>
-            
-            <NotificationsNone/>
+            <NotificationsNone className='icon'/>
           </div>
           <div>
-            <Settings/>
+            <Settings className='icon'/>
           </div>
           <div className='profile_image_container'>
-            <img src= {Profile} alt="profile"/>
+            <img src= {Profile} alt="profile" className='icon'/>
           </div>
         </div>
 

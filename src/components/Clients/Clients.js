@@ -10,7 +10,6 @@ function Clients() {
   useEffect(() => {
     axios.get(url)
       .then(response => {
-        
         if (response.status === 200) {
           setStatusNote("")
           setClient(response.data.data)
@@ -18,10 +17,7 @@ function Clients() {
           setStatusNote("Error while loading data, please Kindly refresh the page!")
         }
       })
-
   }, [])
-  console.log("This is client")
-  console.log(clients)
 
   return (
     <div className='clients'>
@@ -31,12 +27,12 @@ function Clients() {
       </p>
       <div className='clients_container'>
         <table className='clients_table'>
-          <tr className='clients_table'>
-            <th>Id</th>
+          <tr className='clients_table_tr table_heading'>
+            <th className='clients_th'>Id</th>
             <th className='clients_th'>Client</th>
-            <th className='clients_th'>Email</th>
-            <th className='clients_th'>Phone number</th>
-            <th className='clients_th'>Gender</th>
+            <th className='clients_th email_heading'>Email</th>
+            <th className='clients_th phone_heading'>Phone</th>
+            <th className='clients_th gender_heading'>Gender</th>
             {/* <th className='clients_th'>Images</th> */}
           </tr>
           {
@@ -47,9 +43,9 @@ function Clients() {
                   <img src={client["contact"].image} alt="client"/>
                   <span>{client["contact"].firstname} {client["contact"].lastname}</span>
                 </td>
-                <td>{client["contact"].email}</td>
-                <td>{client["contact"].phone}</td>
-                <td>{client["contact"].gender}</td> 
+                <td className='email_body'>{client["contact"].email}</td>
+                <td className='phone_body'>{client["contact"].phone}</td>
+                <td className='gender_body'>{client["contact"].gender}</td> 
             </tr>
             ) )
             : null
